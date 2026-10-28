@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- 
+    INS2053 - Soạn thảo & Quản trị Web | Bài tập 7: Typography với Google Fonts
+    Sinh viên thực hiện: CodeBreakers Club Project
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ - CodeBreakers Club</title>
+
+  <!-- Task 1: Tích hợp Google Fonts (Poppins cho đề mục, Open Sans cho nội dung) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Task 2: Áp dụng CSS tùy chỉnh typography -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Phần Banner chính của website -->
+  <header class="site-header">
+    <h1>CodeBreakers Club</h1>
+    <p class="site-tagline">Câu lạc bộ Lập trình & Sáng tạo Công nghệ sinh viên - VNU IS</p>
+  </header>
+
+  <!-- Thanh điều hướng menu -->
+  <nav class="site-nav" aria-label="Điều hướng chính">
+    <a href="index.html" class="active">Trang Chủ</a>
+    <a href="about.html">Về Chúng Tôi</a>
+    <a href="contact.html">Liên Hệ</a>
+  </nav>
+
+  <!-- Khung nội dung chính với độ rộng tối ưu khả năng đọc -->
+  <main class="main-wrapper">
+    
+    <section class="card">
+      <span class="badge-tag">Chào mừng bạn mới</span>
+      <h1>Khám phá Đam mê Lập trình & Phát triển Web</h1>
+      <p class="lead-text">
+        CodeBreakers Club là nơi kết nối những sinh viên yêu thích công nghệ, lập trình web và khoa học máy tính. Cùng nhau học tập, chia sẻ kinh nghiệm thực tế và xây dựng các dự án công nghệ ý nghĩa.
+      </p>
+      <div class="callout-box">
+        <p><strong>Điểm nhấn Typography tuần này:</strong> Website áp dụng bộ font <em>Poppins</em> cho các tiêu đề nhằm tạo sự hiện đại, vững chãi; kết hợp với <em>Open Sans</em> cho phần thân bài giúp việc đọc trên màn hình trở nên rõ ràng và không mỏi mắt.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Hoạt Động Nổi Bật Của Câu Lạc Bộ</h2>
+      <p>Chúng tôi tổ chức các buổi sinh hoạt chuyên đề định kỳ hàng tuần dành cho mọi cấp độ thành viên:</p>
+      
+      <h3>1. Workshop Kỹ thuật Web Hàng tuần</h3>
+      <p>
+        Tìm hiểu từ các khái niệm căn bản như chuẩn HTML5 ngữ nghĩa, CSS Typography, Flexbox/Grid cho tới các kỹ thuật thiết kế web hiện đại. Bạn có thể xem thêm chi tiết lịch sử hình thành tại trang <a href="about.html">Giới thiệu câu lạc bộ</a>.
+      </p>
+
+      <h3>2. Dự Án Thực Chiến Theo Nhóm (Team Projects)</h3>
+      <p>
+        Các thành viên sẽ cùng lập nhóm từ 3 đến 5 bạn để phát triển sản phẩm web hoàn chỉnh từ khâu lên ý tưởng, dựng layout giao diện cho tới triển khai thực tế.
+      </p>
+
+      <h3>3. Chia Sẻ Cơ Hội Thực Tập & Nghề Nghiệp</h3>
+      <p>
+        Kết nối với các cựu sinh viên đang làm việc tại các công ty công nghệ hàng đầu, được cố vấn (mentorship) lộ trình học tập và hoàn thiện hồ sơ ứng tuyển.
+      </p>
+
+      <p>
+        Bạn muốn tham gia sinh hoạt cùng chúng tôi? Hãy điền thông tin tại trang <a href="contact.html">Đăng ký thành viên mới</a> để nhận thông báo buổi sinh hoạt gần nhất!
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Chân trang -->
+  <footer class="site-footer">
+    <p>&copy; 2026 CodeBreakers Club - Môn học INS2053 Soạn thảo & Quản trị Web.</p>
+    <p>Khoa Hệ thống thông tin & Kinh tế số - Trường Quốc tế, ĐHQGHN.</p>
+  </footer>
+
+</body>
+</html>

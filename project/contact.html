@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- 
+    INS2053 - Soạn thảo & Quản trị Web | Bài tập 7: Typography với Google Fonts
+    Sinh viên thực hiện: CodeBreakers Club Project
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ - CodeBreakers Club</title>
+
+  <!-- Task 1: Tích hợp Google Fonts đồng bộ trên cả 3 trang -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Task 2: Áp dụng CSS tùy chỉnh typography -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Banner đầu trang -->
+  <header class="site-header">
+    <h1>CodeBreakers Club</h1>
+    <p class="site-tagline">Câu lạc bộ Lập trình & Sáng tạo Công nghệ sinh viên - VNU IS</p>
+  </header>
+
+  <!-- Menu điều hướng -->
+  <nav class="site-nav" aria-label="Điều hướng chính">
+    <a href="index.html">Trang Chủ</a>
+    <a href="about.html">Về Chúng Tôi</a>
+    <a href="contact.html" class="active">Liên Hệ</a>
+  </nav>
+
+  <!-- Khung nội dung -->
+  <main class="main-wrapper">
+
+    <section class="card">
+      <span class="badge-tag">Kết nối với chúng tôi</span>
+      <h1>Thông Tin Liên Hệ & Đăng Ký</h1>
+      <p class="lead-text">
+        Bạn có câu hỏi về hoạt động của câu lạc bộ, muốn gia nhập thành viên mới hoặc đề xuất chủ đề workshop? Đừng ngần ngại để lại lời nhắn cho Ban điều hành theo mẫu biểu dưới đây.
+      </p>
+
+      <h2>Địa Điểm & Kênh Trực Tuyến</h2>
+      <ul>
+        <li><strong>Văn phòng sinh hoạt:</strong> Phòng Lab Máy tính 302, Toà nhà C, Cơ sở Làng Đại học.</li>
+        <li><strong>Email ban chủ nhiệm:</strong> <a href="mailto:codebreakers.isvnu@gmail.com">codebreakers.isvnu@gmail.com</a></li>
+        <li><strong>Thời gian phản hồi dự kiến:</strong> Trong vòng 24 - 48 giờ làm việc.</li>
+      </ul>
+
+      <h2>Gửi Lời Nhắn Trực Tiếp</h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Thông tin người gửi</legend>
+
+          <div class="form-group">
+            <label for="fullname">Họ và tên sinh viên *</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Ví dụ: Nguyễn Văn An" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Địa chỉ Email sinh viên *</label>
+            <input type="email" id="email" name="email" placeholder="Ví dụ: student.id@vnu.edu.vn" required>
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Nội dung quan tâm</label>
+            <select id="topic" name="topic">
+              <option value="join">Đăng ký tham gia câu lạc bộ</option>
+              <option value="workshop">Đề xuất ý tưởng buổi Workshop</option>
+              <option value="collaboration">Hợp tác dự án học tập</option>
+              <option value="other">Ý kiến đóng góp khác</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Lời nhắn chi tiết *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung bạn muốn chia sẻ với chúng tôi..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Gửi Thông Tin Liên Hệ</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Chân trang -->
+  <footer class="site-footer">
+    <p>&copy; 2026 CodeBreakers Club - Môn học INS2053 Soạn thảo & Quản trị Web.</p>
+    <p>Trở về <a href="index.html">Trang Chủ</a> | Tìm hiểu thêm <a href="about.html">Về Chúng Tôi</a></p>
+  </footer>
+
+</body>
+</html>
